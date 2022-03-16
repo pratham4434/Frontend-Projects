@@ -1,0 +1,167 @@
+body {
+  font-family: "Montserrat";
+}
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.aichvon {
+  font-family: "Montserrat-Black", sans-serif;
+  font-size: 4.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+.png {
+  height: 22px;
+  margin-bottom: 5px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.download-buttons {
+  margin: 5% 3% 5% 0;
+}
+
+.cpd {
+  position: absolute;
+  right: 11%;
+}
+
+.title-image {
+  width: 20%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 21%;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-size: 4rem;
+  line-height: 1.5;
+  font-weight: bolder;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+
+#features {
+  padding: 7% 15%;
+  background: #fff;
+  z-index: 1;
+  position: relative;
+}
+
+.feature-box {
+  padding: 4.5%;
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: -70%;
+}
+
+.nav-item {
+  padding: 7%;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+.feat-img1 {
+  height: 8%;
+  margin-bottom: 1rem;
+  color: #ef8172;
+}
+
+#testimonials {
+  background-color: #ef8172;
+  text-align: center;
+  color: #fff;
+}
+
+.testimonial-img {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+  text-align: center;
+}
+
+.press-image {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-items {
+  padding: 3% 2%;
+}
+
+@media (max-width: 1002px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+    width: 80%;
+  }
+}
+
+.footer-text {
+  color: #fff;
+  font-size: 4rem;
+  padding: 7% 25% 0 25%;
+  font-family: "Montserrat";
+  font-weight: 1800;
+  line-height: 1.5;
+}
+
+.footer {
+  background-color: #ff4c68;
+  text-align: center;
+}
+
+.lower-icons {
+  color: #000;
+  padding: 10px;
+}
+
+.last-footer {
+  text-align: center;
+  padding-top: 4%;
+}
