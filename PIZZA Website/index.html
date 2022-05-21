@@ -7,8 +7,10 @@
     <title>Pizza Website</title>
 
     <!-- Swiper JS CSS-->
-    <link rel="stylesheet" href="">
-
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <!-- Scroll Reveal -->
     <link rel="stylesheet" href="">
 
@@ -58,7 +60,27 @@
     <main>
         <!-- Home Section -->
         <section class="home" id="home">
+                <div class="home-content">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                    <img class ="home-img" src="images/wc1813154.jpg" alt="">
+                                    <div class="home-details">
+                                        <div class="home-text">
+                                            <h4 class="homeSubtitle">We really like what we do.</h4>
+                                        <h2 class="homeTitle">Pizzas with the <br> BEST TASTE
+                                        </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
 
+                        <div class="swiper-button-next swiper-navBtn"></div>
+                        <div class="swiper-button-prev swiper-navBtn"></div>
+                        <div class="swiper-pagination"></div>
+
+                    </div>
+                </div>
         </section>
   
 <!-- About Section -->
@@ -97,7 +119,7 @@
 
 
 <!-- Swiper JS -->
-<script src=""></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <!-- Scroll Reveal -->
 <script src=""></script>

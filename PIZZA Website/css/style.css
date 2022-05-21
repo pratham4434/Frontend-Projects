@@ -89,6 +89,11 @@ a{
   text-decoration: none;
 }
 
+img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 /* Reusuable CSS */
 .section{
   padding: 7rem 2rem;
@@ -115,7 +120,7 @@ a{
   height: 7rem;
   width: 100%;
   z-index: var(--z-fixed);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
 }
 
 /* nav */
@@ -131,16 +136,16 @@ a{
 .phone-icon,
 .phone-number{
   font-size: 2rem;
-  color: var(--text-color);
+  color: var(--white-color);
 }
 .logo-text{
-  color: var(--text-color);
+  color: var(--white-color);
 }
 
 .nav-link{
   position: relative;
   text-transform: capitalize;
-  color: var(--text-color);
+  color: var(--white-color);
 
 }
 .nav-link::before{
@@ -151,7 +156,7 @@ a{
   height: 6px;
   width: 6px;
   border-radius: 50%;
-  background-color: var(--text-color);
+  background-color: var(--white-color);
   transform: translateX(-50%);
   opacity: 0;
 }
@@ -168,7 +173,15 @@ a{
   display: none;
 }
 
+/* nav responsive */
 @media screen and (max-width:768px){
+  .nav-link{
+    color: var(--text-color);
+  }
+
+  .nav-link::before{
+    background-color: var(--text-color);
+  }
   .contact-content{
     display: none;
   }
@@ -195,6 +208,7 @@ a{
     align-items: center;
     justify-content: space-between;
     transform: var(--tran-0-5);
+    
   }
   .nav .menu-content.open{
     right: 0;
@@ -221,18 +235,75 @@ a{
   .navOpen-btn{
     font-size: 2rem;
     cursor: pointer;
+    color: var(--white-color);
   }
 }
 
-/* nav responsive */
+
 
 
 /* Home */
+.home{
+  height: 100vh;
+  width: 100%;
+  /* background-color: red; */
+}
 
+.swiper-slide{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.swiper-slide::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: var(--z-overlay);
+
+}
+
+.home-img{
+  height: 100%;
+  width: 100%;
+}
 
 /* swiper button */
+.swiper-navBtn{
+  height: 5rem;
+  width: 5rem;
+  color: var(--white-color);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: var(--tran-0-2)
+}
 
+.swiper-navBtn::hover{
+  background-color: rgba(255, 255, 255, 0.3);
+}
 
+.swiper-navBtn::after,
+.swiper-navBtn::before{
+  font-size: 2rem;
+}
+
+.swiper-button-next{
+  right: 16rem;
+}
+.swiper-button-prev{
+  left: 16rem;
+}
+
+.home-details{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* About */
 
 
