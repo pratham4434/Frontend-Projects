@@ -1,1 +1,1 @@
-# WebD-Projects-
+# Small Projects (HTML, CSS, JS)
